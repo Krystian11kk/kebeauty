@@ -1,0 +1,20 @@
+<div class="ke---main-container-2 w-container"><div class="ke---center-heading-2"><h2 class="heading-2-style mobile-heading-2-style">
+{{ section.settings.text_blog_headline }}
+</h2>
+<div class="ke---limit-511"><div class="paragraph">
+{{ section.settings.text_blog_text }}
+</div>
+</div><a class="btn w-inline-block" href="{{ section.settings.url_button_link }}"> {{ section.settings.text_button_text }} </a>
+</div><div class="w-layout-grid ke-blog-grid-3"><div bind="046aeb27-2ec3-40fb-82be-13112cc86890" class="collection-list-wrapper w-dyn-list"><div bind="046aeb27-2ec3-40fb-82be-13112cc86891" role="list" class="collection-list-3 w-dyn-items"><div bind="046aeb27-2ec3-40fb-82be-13112cc86892" role="listitem" class="w-dyn-item"><a li-object:href="article.url" id="w-node-_20ffe0c2-6a6a-9e4f-ed6c-8712e2220fe8-dfd9c560" href="{{ article.url }}" class="ke-tile-blog-1 padding-1rem w-inline-block"><div class="ke-image-wrap-blog-1"><img li-object:src="article.image | img_url: 'master'" li-object:alt="article.image.alt" alt="{{ article.image.alt }}" src="{{ article.image | img_url: 'master' }}" loading="lazy" class="ke-image-blog-1 w-dyn-bind-empty">
+<div class="ke-tag-blog-1"><div sym-bind="{"children":{"type":"Call","val":{"fun":{"type":"Variable","val":["DynamoGateway","dynamoPlainTextToListOfElements"]},"arg":{"type":"Select","val":{"from":{"type":"Variable","val":"Dynamo"},"prop":"author"}}}}}" class="blog-tag w-dyn-bind-empty"></div></div></div><div class="ke-bottom-blog-1"><h3 li-object:text="blog.title" class="heading-3-style blog-title text-white text-white-override w-dyn-bind-empty">
+{{ blog.title }}
+</h3><div class="paragraph text-white w-dyn-bind-empty">
+{{ section.settings.text_blog_text }}
+</div>
+</div><div class="ke-blog-details-1"><div class="waves---paragraph-small">
+{{ section.settings.text_blog_text_time }}
+</div>
+<div class="waves-circle-blog-1"></div><div class="waves---paragraph-small w-dyn-bind-empty">
+{{ section.settings.text_blog_text_date }}
+</div>
+</div></a></div></div><div bind="046aeb27-2ec3-40fb-82be-13112cc86893" class="w-dyn-empty"><div>No items found.</div></div></div></div></div> {% schema %} {"tag":"div","name":"blog_articles","class":"ke-section-medium-2","settings":[{"id":"text_blog_headline","type":"text","label":"Blog-Headline","default":"K.E. Beauty Blog"},{"id":"text_blog_text","type":"text","label":"blog-text","default":"Check out our blog to stay up to date with beauty trends, skincare advice and our latest products! "},{"id":"url_button_link","type":"url","label":"Button-Link"},{"id":"text_button_text","type":"text","label":"Button-Text","default":"\n              <div>View All Blogs<\/div>\n            "},{"id":"text_blog_text_time","type":"text","label":"blog-text-time","default":"3 min read"},{"id":"text_blog_text_date","type":"text","label":"blog-text-date","default":"Lorem Ipsum"}],"presets":[{"name":"blog_articles","category":"Liquify"}]} {% endschema %}

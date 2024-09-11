@@ -1,0 +1,15 @@
+<div class="w-layout-grid ke-grid-footer-dark"><div id="w-node-_5b48c610-12d4-a245-3ac5-dc8a295f1b21-295f1b1f" class="ke-block-footer"><a li-object:href="routes.root_url" href="{{ routes.root_url }}" class="w-inline-block"><img loading="lazy" src="{{ 'gf-likes.svg' | asset_url }}" alt="" class="ke-logo-footer">
+</a></div>{% for link in linklists['footer'].links %}    <div li-for="link in linklists['footer'].links" id="w-node-_5b48c610-12d4-a245-3ac5-dc8a295f1b23-295f1b1f" class="ke-block-footer">
+                                    
+                            <div li-object="link.title" class="ke-heading-footer-white">{{ link.title }}</div>
+                            
+                            <a li-object:href="child_link.url" li-object="child_link.title" href="{{ child_link.url }}" aria-current="page" class="ke-link-footer-large-white brown900text w--current">{{ child_link.title }}</a>
+                            
+                            <a li-object:href="child_link.url" li-object="child_link.title" href="{{ child_link.url }}" class="ke-link-footer-large-white brown900text">{{ child_link.title }}</a>
+                            
+                            <a li-object="child_link.title" li-object:href="child_link.url" href="{{ child_link.url }}" class="ke-link-footer-large-white brown900text">{{ child_link.title }}</a>
+                            
+                            <a li-object:href="child_link.url" li-object="child_link.title" href="{{ child_link.url }}" class="ke-link-footer-large-white brown900text">{{ child_link.title }}</a>
+                            
+                        </div>
+{% endfor %}</div><div class="ke-block-footer-down"><div class="ke-text-footer-dark brown900text">K.E. Beauty All rights reserved</div></div> {% schema %} {"tag":"div","name":"footer","class":"ke-footer-dark","presets":[{"name":"footer","category":"Liquify"}]} {% endschema %}
