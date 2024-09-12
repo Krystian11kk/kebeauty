@@ -1,0 +1,22 @@
+<div class="container"><div class="shop-top-wrapper center-align"><div><a href="#" class="eyebrow-text">K.E. Beauty's Best</a><h2 class="heading-2-style mobile-heading-2-style">
+{{ section.settings.text_headline_3 }}
+</h2>
+</div></div><div class="soap-display-div"><div class="featured-soap-div">{% for product in collection.products %}    <div li-for="product in collection.products" class="w-layout-grid soap-grid">
+                                    
+                            {% render 'product_item', product: {{product}} %}
+
+                            
+                            {% render 'product_item', product: {{product}} %}
+
+                            
+                            {% render 'product_item', product: {{product}} %}
+
+                            
+                        </div>
+{% endfor %}</div><div class="featured-soap-div"><div class="w-layout-grid soap-grid">{% render 'product_item', product: {{product}} %}
+{% render 'product_item', product: {{product}} %}
+{% render 'product_item', product: {{product}} %}
+</div></div><div class="featured-soap-div"><div class="w-layout-grid soap-grid">{% render 'product_item', product: {{product}} %}
+{% render 'product_item', product: {{product}} %}
+{% render 'product_item', product: {{product}} %}
+</div></div></div></div> {% schema %} {"tag":"div","name":"soap","class":"products-section","settings":[{"id":"text_headline_3","type":"text","label":"headline-3","default":"Our All Natural Soaps"}],"presets":[{"name":"soap","category":"Liquify"}]} {% endschema %}
